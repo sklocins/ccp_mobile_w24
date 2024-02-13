@@ -1,3 +1,7 @@
+@media (prefers-reduced-motion: reduce) {
+	/* CSS to disable motion goes here */
+  }
+
 /*Add padding and margin to space out the page.
 Make the font larger too.*/
 body{
@@ -18,7 +22,6 @@ header{
 }
 
 a{
-	text-transform: uppercase;
 	text-align: center;
 	text-decoration: none;
 }
@@ -261,3 +264,17 @@ h2.main{
 	border-width: 3px;
 	border-color: green;
   }
+
+  footer{
+    background-image: repeating-linear-gradient(#CFEBB6, #B9E192 25%, #B3C7F7 65%, #F8B8D0 80%, #F194B8);
+    border-style: solid;
+    border-color:#ffffff;
+    border-width: 5px;
+}
+
+  footer p{
+    font-size: 20px;
+    text-align: right;
+    padding: 15px;
+    padding-left: 0px;
+}
