@@ -1,7 +1,3 @@
-@media (prefers-reduced-motion: reduce) {
-	/* CSS to disable motion goes here */
-  }
-
 /*Add padding and margin to space out the page.
 Make the font larger too.*/
 body{
@@ -27,7 +23,7 @@ a{
 }
 
 .active{
-	background: #b3c7f7;
+	background: white;
     text-transform: uppercase;
 	text-align: center;
 	color:#000;
