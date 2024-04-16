@@ -10,56 +10,61 @@
 <body>
     <a class="skip-main" href = "#main">Skip to Main Content</a>
     <header>
+        <img alt = "Sandra's Game Station Logo with Domino graphic" src = "./images/logo.png" height = "100px">
         <nav>
             <ul>
-                <li class="active"><a href = "index.html">Home</a></li>
-                <li><a href = "pets.html">Pets</a></li>
-                <li><a href = "recipes.html">Recipes</a></li>
-                <li><a href = "travel.html">Travel</a></li>
+                <li class="active"><a href = "index.html">home</a></li>
+                <li><a href = "tic-tac-toe.html">tic-tac-toe</a></li>
+                <li><a href = "checkers.html">checkers</a></li>
+                <li><a href = "nonogram.html">nonogram</a></li>
             </ul>
         </nav>
-        <h1>All My Fave Hobbies</h1>
-
+        <!-- <h1>Sandra's Game Station</h1> -->
     </header>
     <main id="main">
-        <div>
-            <p>Welcome to All My Fave Hobbies, a place to share my favorite things! Look at my adorable pets, check out my favorite recipes, and see my exciting travels!</p>
-        </div>
+    <div class = "container">
 
-    <div class = "wrapper">
-        <div class = "one">
-            <h2 class = "main"><a href = "pets.html">Pets</a></h2>
-            <p>Check out my amazing pets!</p>
+        <div class = "board">
+            <div class = "square" id = "left-top" onclick="playerMoved(0)">
+            </div>
+            <div class = "square" id = "center-top" onclick="playerMoved(1)">
+            </div>
+            <div class = "square" id = "right-top" onclick="playerMoved(2)">
+            </div>
+            <div class =  "square" id = "left-middle" onclick="playerMoved(3)">
+            </div>
+            <div class =  "square" id = "center-middle" onclick="playerMoved(4)">
+            </div>
+            <div class =  "square" id = "right-middle" onclick="playerMoved(5)">
+            </div>
+            <div class =  "square" id = "left-bottom" onclick="playerMoved(6)">
+            </div>
+            <div class =  "square" id = "center-bottom" onclick="playerMoved(7)">
+            </div>
+            <div class =  "square" id = "right-bottom" onclick="playerMoved(8)">
+            </div>
         </div>
-        <div class = "two">
-            <img src="images/WrenAndYo.jpeg" width ="400" alt = "Tan and white dog cuddling and resting head on black dog">
+        <script src="js/script.js"></script>
+        <div class = "scoreboard">
+            <div class="player-mode-buttons">
+                <button id="one-player-mode" onclick="toggleplayer(1)">one player</button>
+                <button id="two-player-mode" class = "selected-player" onclick="toggleplayer(2)">two players</button>
+            </div>
+            <div class = "message">
+                Welcome!
+            </div>
+            <!-- <div class = "player" id = "player1">
+                <h2>player 1</h2>
+            </div> -->
         </div>
     </div>
-    <div class = "wrapper">
-        <div class = "four">
-            <h2 class = "main"><a href = "recipes.html">Recipes</a></h2>
-            <p>Look at my favorite recipes!</p>
-        </div>
-        <div class = "three">
-            <img src="images/ChocolateCheesecake.jpeg" width = "400" height = "427" alt="A decadent chocolate cheesecake with an oreo crust">
-        </div>
-    </div>
-    <div class = "wrapper">
-        <div class = "one">
-            <h2 class = "main"><a href = "travel.html">Travel</a></h2>
-            <p>See the cool places I went!</p>
-        </div>
-        <div class = "two">
-            <img src="images/MauiLahainaTree.jpeg" width ="400" height = "427" alt = "The city of Lahaina's (Maui) historical and beautiful banyan tree">
-        </div>
-            
+    <button id="reset-button">Reset Game</button>
             <!-- Sandra Klocinski-->
-    </div>
     </main>
 </body>
-    <footer>	
+    <!-- <footer>	
         <p>University of Michigan <br/>	
           &copy; Sandra Klocinski - Web Design 2024</p>	
-      </footer>	
+      </footer>	 -->
 
 </html>
